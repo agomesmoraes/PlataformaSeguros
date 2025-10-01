@@ -6,15 +6,15 @@ Este projeto é uma implementação de um sistema de gerenciamento de propostas 
 
 A solução foi construída utilizando os seguintes princípios e tecnologias:
 
-- [cite_start]**Linguagem:** C# com .NET 9 [cite: 23]
-- [cite_start]**Arquitetura Principal:** Arquitetura Hexagonal (Ports & Adapters) [cite: 3]
-- [cite_start]**Padrões:** Domain-Driven Design (DDD), SOLID, Clean Architecture [cite: 6, 27]
-- [cite_start]**Abordagem:** Microserviços [cite: 4]
-  - [cite_start]`PropostaService`: Responsável por todo o ciclo de vida da proposta. [cite: 10, 11]
-  - [cite_start]`ContratacaoService`: Responsável por efetivar a contratação de propostas aprovadas. [cite: 16, 17]
-- [cite_start]**Comunicação:** A comunicação entre os serviços é feita via API REST síncrona. [cite: 26]
-- [cite_start]**Banco de Dados:** Entity Framework Core com provedor In-Memory (atuando como dados mocados). [cite: 5]
-- [cite_start]**Testes:** Testes de Unidade com xUnit e Moq para validar as camadas de Domínio e Aplicação. [cite: 29]
+- **Linguagem:** C# com .NET 9 
+- **Arquitetura Principal:** Arquitetura Hexagonal (Ports & Adapters)
+- **Padrões:** Domain-Driven Design (DDD), SOLID, Clean Architecture
+- **Abordagem:** Microserviços
+  - `PropostaService`: Responsável por todo o ciclo de vida da proposta.
+  - `ContratacaoService`: Responsável por efetivar a contratação de propostas aprovadas.
+- **Comunicação:** A comunicação entre os serviços é feita via API REST síncrona.
+- **Banco de Dados:** Entity Framework Core com provedor In-Memory (atuando como dados mocados).
+- **Testes:** Testes de Unidade com xUnit e Moq para validar as camadas de Domínio e Aplicação.
 
 ## Como Executar a Solução
 

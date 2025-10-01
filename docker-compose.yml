@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  propostaservice:
+    build:
+      context: .
+      dockerfile: src/PropostaService.Api/Dockerfile
+    ports:
+      - "8081:8080"
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+
+  contratacaoservice:
+    build:
+      context: .
+      dockerfile: src/ContratacaoService.Api/Dockerfile
+    ports:
+      - "8082:8080"
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - PropostaServiceUrl=http://propostaservice:8080
+    depends_on:
+      - propostaservice

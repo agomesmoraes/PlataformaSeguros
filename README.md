@@ -21,6 +21,22 @@ A solução foi construída utilizando os seguintes princípios e tecnologias:
 ### Pré-requisitos
 - .NET 9 SDK
 
+### Executando com Docker (Método Recomendado)
+
+Certifique-se de ter o Docker Desktop instalado e em execução.
+
+1.  Clone este repositório.
+2.  Abra um terminal na pasta raiz do projeto (onde o arquivo `docker-compose.yml` está localizado).
+3.  Execute o seguinte comando para construir as imagens e iniciar os contêineres:
+    ```bash
+    docker-compose up --build
+    ```
+4.  Aguarde o processo ser concluído. Os serviços estarão disponíveis nos seguintes endereços:
+    - **PropostaService:** `http://localhost:8081/swagger`
+    - **ContratacaoService:** `http://localhost:8082/swagger`
+
+Para parar todos os serviços, pressione `Ctrl + C` no terminal e execute `docker-compose down`.
+
 ### Executando com o Visual Studio
 1. Clone este repositório.
 2. Abra o arquivo de solução (`.sln`) no Visual Studio.

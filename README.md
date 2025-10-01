@@ -16,6 +16,12 @@ A solução foi construída utilizando os seguintes princípios e tecnologias:
 - **Banco de Dados:** Entity Framework Core com provedor In-Memory (atuando como dados mocados).
 - **Testes:** Testes de Unidade com xUnit e Moq para validar as camadas de Domínio e Aplicação.
 
+## Banco de Dados
+
+Atualmente, o projeto utiliza o provedor de banco de dados **In-Memory do Entity Framework Core**. Esta abordagem foi escolhida para cumprir o requisito de "dados mocados", facilitando a configuração do ambiente e a execução dos testes sem a necessidade de um servidor de banco de dados externo.
+
+A arquitetura foi projetada utilizando o Padrão de Repositório e Inversão de Dependência. Isso significa que a implementação do banco de dados em memória pode ser facilmente substituída no futuro por um banco de dados relacional persistente (como SQL Server ou SQLite) com alterações mínimas, focadas apenas na camada de Infraestrutura. A implementação de um banco de dados versionado com migrations seria o próximo passo natural para evoluir a aplicação para um ambiente de produção.
+
 ## Como Executar a Solução
 
 ### Pré-requisitos

@@ -62,7 +62,7 @@ Para parar todos os serviços, pressione `Ctrl + C` no terminal e execute `docke
    dotnet run
 
 ## Diagrama da Arquitetura
-
+```
       +------------------------------------------------------------------------------------------------+
       |                                        CLIENTE (Navegador/Swagger)                             |
       +------------------------------------------------------------------------------------------------+
@@ -88,7 +88,7 @@ Para parar todos os serviços, pressione `Ctrl + C` no terminal e execute `docke
 | |(Entidades, Regras, Ports/Interfaces)| |                                | |(Entidades, Regras, Ports/Interfaces)| |
 | +------------------------------------+ |                                | +------------------------------------+ |
 +----------------------------------------+                                +----------------------------------------+
-
+```
 
 ## Autor
 
